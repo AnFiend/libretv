@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 5;
+const MAX_HISTORY_ITEMS = 10;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -239,7 +239,7 @@ const API_SITES = {
         api: 'https://apiyutu.com/api.php/providedao/vod',
         name: '玉兔资源',
         adult: true
-    },
+    }
 
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
