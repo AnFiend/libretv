@@ -2,7 +2,7 @@
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
-const MAX_HISTORY_ITEMS = 10;
+const MAX_HISTORY_ITEMS = 5;
 
 // 密码保护配置
 const PASSWORD_CONFIG = {
@@ -39,10 +39,10 @@ const API_SITES = {
         api: 'https://tyyszy.com/api.php/provide/vod',
         name: '天涯资源',
     },
-    xiaomaomi: {
-        api: 'https://zy.xiaomaomi.cc/api.php/provide/vod',
-        name: '小猫咪资源',
-    },
+    // xiaomaomi: {
+    //     api: 'https://zy.xiaomaomi.cc/api.php/provide/vod',
+    //     name: '小猫咪资源',
+    // },
     ffzy: {
         api: 'http://ffzy5.tv/api.php/provide/vod',
         name: '非凡影视',
@@ -110,98 +110,11 @@ const API_SITES = {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
         name: 'iKun资源'
     },
-    xiaomantou: {
-        api: 'https://mov.5ixmt.com/api.php/provide/vod',
-        name: '遇见小馒头'
-    },
-    liangzi: {
-        api: 'https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8',
-        name: '量子資源'
-    },
-    guangsu: {
-        api: 'https://api.guangsuapi.com/api.php/provide/vod',
-        name: '光速资源'
-    },
-    uku: {
-        api: 'https://api.ukuapi88.com/api.php/provide/vod',
-        name: 'U酷资源'
-    },
-    haohua: {
-        api: 'https://hhzyapi.com/api.php/provide/vod',
-        name: '豪华资源'
-    },
-    huohu: {
-        api: 'https://hhzyapi.com/api.php/provide/vod',
-        name: '火狐资源'
-    },
-    xinlang: {
-        api: 'http://api.xinlangapi.com/xinlangapi.php/provide/vod',
-        name: '新浪资源'
-    },
-    39ys: {
-        api: 'https://www.394tv.com/api.php/provide/vod',
-        name: '39影视'
-    },
-    piaoling: {
-        api: 'https://p2100.net/api.php/provide/vod',
-        name: '飘零影视'
-    },
-    sly: {
-        api: 'https://xxavs.com/api.php/provide/vod',
-        name: '湿乐园',
+    testSource: {
+        api: 'https://www.example.com/api.php/provide/vod',
+        name: '空内容测试源',
         adult: true
     },
-    155zy: {
-        api: 'https://155api.com/api.php/provide/vod',
-        name: '155资源',
-        adult: true
-    },
-    youyi: {
-        api: 'https://a.uezy.pw/api.php/provide/vod',
-        name: '优异资源',
-        adult: true
-    },
-    lsb: {
-        api: 'https://apilsbzy1.com/api.php/provide/vod',
-        name: 'LSB',
-        adult: true
-    },
-    jumao: {
-        api: 'https://to.to-long.com/api.php/provide/vod',
-        name: '橘猫资源',
-        adult: true
-    },
-    lebo: {
-        api: 'https://lbapi9.com/api.php/provide/vod',
-        name: '乐播资源',
-        adult: true
-    },
-    fanhao: {
-        api: 'http://fhapi9.com/api.php/provide/vod',
-        name: '番号资源',
-        adult: true
-    },
-    xiaomaomi: {
-        api: 'http://zy.xiaomaomi.cc/api.php/provide/vod',
-        name: '小猫咪',
-        adult: true
-    },
-   jinying: {
-        api: 'https://jyzyapi.com/provide/vod',
-        name: '金鹰资源',
-        adult: true
-    },
-    didi: {
-        api: 'https://api.ddapi.cc/api.php/provide/vod',
-        name: '滴滴资源',
-        adult: true
-    },
-    senlin: {
-        api: 'https://slapibf.com/api.php/provide/vod',
-        name: '森林资源',
-        adult: true
-    },
-    
     // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
     // 互联网上传播的色情内容将人彻底客体化、工具化，是性别解放和人类平等道路上的巨大障碍。
     // 这些黄色影片是资本主义父权制压迫的最恶毒体现，它将暴力和屈辱商品化，践踏人的尊严，对受害者造成无法弥愈的伤害，并毒害社会关系。
@@ -240,7 +153,6 @@ const API_SITES = {
         name: '玉兔资源',
         adult: true
     },
-
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
