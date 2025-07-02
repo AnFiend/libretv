@@ -231,7 +231,7 @@ const API_SITES = {
         adult: true
     },
     huangcang: {
-        api: ',http:/hsckzy888.com/api.php/provide/vod/from/hsckm3u8',
+        api: 'http:/hsckzy888.com/api.php/provide/vod/from/hsckm3u8',
         name: '黄色仓库',
         adult: true
     },
@@ -239,7 +239,7 @@ const API_SITES = {
         api: 'https://apiyutu.com/api.php/providedao/vod',
         name: '玉兔资源',
         adult: true
-    }
+    },
 
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
